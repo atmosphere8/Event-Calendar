@@ -20,9 +20,9 @@ function App() {
               <a className='leftNav' href="">Propose Event</a>
             </div>
             <div className='rightContainer'>
-              <a className='rightNav' href="">New York</a> <img className='rightNavImgs' src={Arrow} alt="Arrow"/> 
-              <a className='rightNav' href="">24.06.2022</a> <img className='rightNavImgs' src={Arrow} alt="Arrow"/>  
-              <a className='rightNav' href="">Rock Concert</a> <img className='rightNavImgs' src={Arrow} alt="Arrow"/> 
+              <a className='rightNav' href="">New York</a> <img className='arrowImg' src={Arrow} alt="Arrow"/> 
+              <a className='rightNav' href="">24.06.2022</a> <img className='arrowImg' src={Arrow} alt="Arrow"/>  
+              <a className='rightNav' href="">Rock Concert</a> <img className='arrowImg' src={Arrow} alt="Arrow"/> 
             </div>
           </nav>
         </header>
@@ -147,8 +147,23 @@ function App() {
           </svg>
         </div>
 
-        <footer>
-          
+    
+
+
+        <footer  className='footerContainer'>
+            <div className='footerContainerOne'>
+                <p>LO</p>
+            </div>
+            <div className='footerContainerTwo'>
+                <a href="">Events</a>
+                <a href="">Propose Event</a>
+                <a href="">Contact</a>
+            </div>
+            <div className='footerContainerThree'>
+                <a href="">Your city: new york <img className='footerContainerFirstImg' src={Arrow} alt="Arrow"/> </a>
+                <a href="">date: 26.07.2022 <img className='footerContainerSecondImg' src={Arrow} alt="Arrow"/> </a>
+                <a href="">type: rock concert <img className='footerContainerThirdImg' src={Arrow} alt="Arrow"/> </a>
+            </div>
         </footer>
       </body>
     </>

@@ -18,9 +18,24 @@
     src: url(../fonts/GrtskTera-BoldItalic.ttf);
 }
 
+@font-face {
+    font-family: 'Grtsk Tera B';
+    src: url(../fonts/GrtskTera-Bold.ttf);
+}
+
 body{
     background-color:#fff971;
     margin: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -60,11 +75,11 @@ nav .leftNav, nav .rightNav{
     margin-left: 46px;
 }
 
-.rightNavImgs{
-    margin-left: 10px;
+.arrowImg, .footerContainerSecondImg, .footerContainerThirdImg, .footerContainerFirstImg{
+    margin-left: 20px;
     margin-right: 50px;
-    width: 18px;
-    height: 10px;
+    width: 24px;
+    height: 14px;
 }
 
 .rightContainer, .leftContainer{
@@ -277,6 +292,7 @@ nav .leftNav, nav .rightNav{
 
 .lastLine {
     margin-top: 160px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -291,6 +307,76 @@ nav .leftNav, nav .rightNav{
     stroke-dasharray: 40 30;
 }
 
-footer{
-    height: 100px;
+.footerContainer{
+    height: 251px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainerOne p{
+    color: #FFF;
+    font-family: Grtsk Tera B;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-left: 60px;
+    margin-top: 75px;
+}
+
+
+.footerContainerTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-bottom: 64px;
+}
+
+.footerContainerTwo a{
+    color: #FFF;
+    font-family: Grtsk Tera;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-top: 33px;
+    margin-right: 150px;
+}
+
+
+
+.footerContainerThree a{
+    width: 350px;
+    color: #FFF;
+    font-family: Grtsk Tera;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-top: 33px;
+}
+
+.footerContainerThree{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    margin-bottom: 64px;
+    margin-right: 250px;
+}
+
+.footerContainerSecondImg{
+    margin-left: 77px;
+}
+
+.footerContainerThirdImg{
+    margin-left: 23px;
 }
