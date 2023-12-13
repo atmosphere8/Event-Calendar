@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Grtsk Tera';
+    src: url(../fonts/GrtskTera-Regular.ttf);
+  }
+
+@font-face {
+    font-family: 'Grtsk Tera EL';
+    src: url(../fonts/GrtskTera-Extralight.ttf);
+}
+
+@font-face {
+    font-family: 'GG Studio';
+    src: url(../fonts/GG-Studio-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Grtsk Tera BI';
+    src: url(../fonts/GrtskTera-BoldItalic.ttf);
+}
+
+body{
+    background-color:#fff971;
+    margin: 0;
+}
+
+header{
+    width: auto;
+    height: 100px;
+    background: #181818;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(68, 41, 41);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .leftNav, nav .rightNav{
+    color: #FFF;
+    font-family: Grtsk Tera;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+
+.leftNav{
+    margin-right: 58px;
+    margin-left: 46px;
+}
+
+.rightNav{
+    margin-left: 46px;
+}
+
+.rightNavImgs{
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 18px;
+    height: 10px;
+}
+
+.rightContainer, .leftContainer{
+    margin-top: 40px;
+}
+
+.leftContainer{
+    margin-left: 10px;
+}
+
+.rightContainer{
+    margin-right: 10px;
+}
+
+.firstText{
+    color: #181818;
+    font-family: GG Studio;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    width: 943px;
+    height: 603px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100px;
+    
+    margin-left: 102px;
+    margin-right: 395px;
+    margin-top: 240px;
+
+}
+
+.eventContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topEvents{
+    color: #181818;
+    font-family: GG Studio;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 70px;
+    margin-left: 102px;
+    margin-top: 200px;
+    width: 700px;
+}
+
+.eventVectorRightImage, .eventVectorLeftImage{
+    margin-top: 200px;
+    width: 56px;
+    height: 56px;
+    margin-right: 40px;
+}
+
+.eventVectorLeftImage{
+    transform: rotate(-180deg);
+    margin-right: 57px; 
+    filter: invert(67%) sepia(9%) saturate(16%) hue-rotate(316deg) brightness(94%) contrast(80%);
+    opacity: 0.5;
+}
+
+.eventRectangles{
+    display: flex;
+    justify-content: space-between;
+    width: 1514px;
+    height: 850px;
+    top: 992px;
+    left: 102px;
+    margin-left: 270px;
+    margin-top: 60px;
+}
+
+.rectangleOne, .rectangleTwo, .rectangleThree{
+    margin-right: 76px;
+    width: 550px;
+    height: 938px;
+    background-color: #181818;
+    border: 5px solid #FFF;
+}
+
+.rectImage{
+    width: 515px;
+    height: 470px;
+    margin-left: 18px;
+    margin-right: 20px;
+    margin-top: 16px;
+}
+
+.pointImage{
+    width: 30.874px;
+    height: 45.365px;
+    margin-left: 30px;
+    margin-top: 19px;
+}
+
+.headerTextRect{
+    display: flex;
+    height: 110px;
+}
+
+.textNextToPoint{
+    width: 430px;
+    color: #FFF;
+    font-family: Grtsk Tera;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    margin-left: 25px;
+    margin-top: 23px;
+}
+
+.bodyTextRect{
+    display: flex;
+    width: 454px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textUnderPoint{
+    color: #FFF;
+    font-family: Grtsk Tera;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    margin-left: 35px;
+}
+
+.infoTextRect{
+    color: #FFF;
+    font-family: Grtsk Tera EL;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 460;
+    line-height: normal;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    opacity: 0.95;
+
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 28px;
+}
+
+.aboutEventContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutEventHyperlink{
+    background-color: #FFF;
+    margin-top: 30px;
+    height: 80px;
+    width: 480px;
+    transition: all .3s ease-in 0s;
+}
+
+.aboutEventHyperlink:hover, b{
+    background-color: rgb(230, 230, 230);
+}
+
+.buttonText{
+    color: black;
+    text-align: center;
+    font-family: Grtsk Tera BI;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-top: 22px;
+}
+
+
+.videoText{
+    color: #181818;
+    font-family: GG Studio;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 70px;
+    width: 280px;
+    margin-left: 102px;
+    margin-top: 350px;
+}
+
+.videoBox{
+    margin-left: 102px;
+    margin-top: 72px;   
+}
+
+.videoPlay{
+    background-color: #181818;
+    width: 1700px;
+    height: 850px;
+    flex-shrink: 0;
+}
+
+.lastLine {
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.lastLine svg {
+    width: 100%;
+    height: 1px;
+}
+
+.lastLine line {
+    stroke: #181818;
+    stroke-dasharray: 40 30;
+}
+
+footer{
+    height: 100px;
+}
