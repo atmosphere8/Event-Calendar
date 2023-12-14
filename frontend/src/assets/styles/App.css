@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Grtsk Tera";
+  src: url(../fonts/GrtskTera-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Grtsk Tera EL";
+  src: url(../fonts/GrtskTera-Extralight.ttf);
+}
+
+@font-face {
+  font-family: "GG Studio";
+  src: url(../fonts/GG-Studio-Bold.otf);
+}
+
+@font-face {
+  font-family: "Grtsk Tera BI";
+  src: url(../fonts/GrtskTera-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Grtsk Tera B";
+  src: url(../fonts/GrtskTera-Bold.ttf);
+}
+
+body {
+  background-color: #fff971;
+
+  width: 100%;
+  margin: 0;
+}
+
+.page__header {
+  background-color: #181818;
+
+  width: auto;
+  height: 90px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.nav__link {
+  color: #fff;
+  font-family: Grtsk Tera;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-right: 100px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.nav__link:hover {
+  color: #fff971;
+}
+
+.nav__vector {
+  margin-left: 16px;
+}
+
+.nav__left,
+.nav__right {
+  margin-top: 33px;
+  margin-left: 46px;
+}
+
+.nav__right {
+  margin-right: -50px;
+}
