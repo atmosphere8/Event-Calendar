@@ -1,0 +1,14 @@
+.line {
+  margin-top: 160px;
+}
+
+svg {
+  width: 100%;
+  height: 31px;
+}
+
+.line__item {
+  stroke: #181818;
+  stroke-dasharray: 40 30;
+  stroke-width: 1.5px;
+}

@@ -1,0 +1,45 @@
+.nav {
+  background-color: #181818;
+
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.menu__link,
+.filter__button {
+  background-color: #181818;
+  border: none;
+
+  color: #fff;
+  font-family: Grtsk Tera;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-right: 100px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.menu__link:hover,
+.filter__button:hover {
+  color: #fff971;
+}
+
+.filter__arrow {
+  margin-left: 16px;
+}
+
+.menu,
+.filter {
+  margin-top: 33px;
+  margin-left: 56px;
+}
+
+.filter {
+  margin-right: -40px;
+}

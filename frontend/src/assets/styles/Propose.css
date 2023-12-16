@@ -1,0 +1,106 @@
+.propose {
+  background-color: #181818;
+
+  display: flex;
+  margin-top: 180px;
+  margin-left: 54px;
+  width: 1800px;
+  height: 1207px;
+}
+
+.propose__text {
+  color: #fff;
+  font-family: GG Studio;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  width: 546.623px;
+  height: 463px;
+  margin-left: 120px;
+  margin-top: 424px;
+}
+
+.self-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 180px;
+}
+
+.information__item {
+  margin-top: 26px;
+  width: 850px;
+  height: 55px;
+  text-indent: 16px;
+  padding-top: 5px;
+  border-style: none;
+}
+
+.information__item-photo {
+  background-color: #fff;
+  margin-top: 26px;
+  width: 855px;
+  height: 55px;
+  text-indent: 16px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information__item-photo input {
+  display: none;
+}
+
+.download-icon {
+  width: 35.089px;
+  height: 32px;
+  margin-right: 21px;
+}
+
+.information__item-describe {
+  margin-top: 26px;
+  width: 850px;
+  height: 125px;
+  text-indent: 16px;
+  padding-bottom: 50px;
+  border-style: none;
+}
+
+.information__item::placeholder,
+.information__item-describe::placeholder,
+.information__item-photo {
+  color: #181818;
+  font-family: Grtsk Tera;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button__text {
+  color: #181818;
+  text-align: center;
+  font-family: Grtsk Tera B;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.submit__button {
+  border-style: none;
+  background-color: #fff;
+  margin-top: 60px;
+  height: 77px;
+
+  transition: all 0.3s;
+}
+
+.submit__button:hover {
+  background-color: lightgray;
+}

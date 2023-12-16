@@ -1,0 +1,31 @@
+.videos {
+  width: auto;
+
+  margin-left: 102px;
+  margin-top: 166px;
+}
+
+.videos__text {
+  color: #181818;
+  font-family: GG Studio;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin: 0px;
+}
+
+.video {
+  background-color: #181818;
+  margin-top: 74px;
+
+  width: 1700px;
+  height: 800px;
+}
+
+.video__item {
+  width: 1700px;
+  height: 800px;
+}

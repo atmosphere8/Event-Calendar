@@ -1,0 +1,20 @@
+.main-text {
+  display: flex;
+  width: 943px;
+  height: 603px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  margin-top: 133px;
+  margin-left: 102px;
+}
+
+.text__item {
+  color: #181818;
+  font-family: GG Studio;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
