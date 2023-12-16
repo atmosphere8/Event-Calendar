@@ -1,0 +1,47 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 180px;
+}
+
+.subscribe__text {
+  color: #181818;
+  text-align: center;
+
+  font-family: GG Studio;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 670px;
+
+  margin-left: 635px;
+}
+
+.self-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 645px;
+}
+
+.self-information .information__item {
+  width: 580px;
+  height: 57px;
+
+  margin-left: 30px;
+}
+
+.self-information .submit__button {
+  width: 585px;
+  height: 60px;
+
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.self-information .button__text {
+  margin-bottom: 16px;
+}

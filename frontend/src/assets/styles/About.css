@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+
+  margin-top: 200px;
+  margin-left: 103px;
+}
+
+.about__text .text__item {
+  color: #181818;
+  font-family: Grtsk Tera;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  width: 730px;
+  height: 650px;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.about__image {
+  width: 850px;
+  height: 723px;
+
+  margin-right: 47px;
+  margin-left: 140px;
+}

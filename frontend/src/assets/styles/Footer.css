@@ -1,0 +1,51 @@
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+
+  background: #181818;
+  height: 251px;
+}
+
+.logo {
+  color: #fff;
+  font-family: Grtsk Tera B;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-top: 70px;
+  margin-left: 56px;
+}
+
+.nav-footer .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.nav-footer .menu__link {
+  font-size: 20px;
+  margin-bottom: 33px;
+}
+
+.nav-footer .filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.nav-footer .filter__button {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  margin-right: 197px;
+}
+
+.nav-footer .filter__arrow {
+  width: 25px;
+  margin-top: 5px;
+}

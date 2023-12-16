@@ -1,10 +1,10 @@
 import "../styles/Events.css";
 
-import Vector from "../images/vector.svg";
-import Point from "../images/point.svg";
-import summerfest from "../images/summerfest.png";
-import jazz from "../images/jazz.png";
-import street from "../images/street.png";
+import Vector from "@images/vector.svg";
+import Point from "@images/point.svg";
+import summerfest from "@images/summerfest.png";
+import jazz from "@images/jazz.png";
+import street from "@images/street.png";
 
 function Events() {
   return (

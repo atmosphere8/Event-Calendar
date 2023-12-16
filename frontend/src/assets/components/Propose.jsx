@@ -1,13 +1,13 @@
 import "../styles/Propose.css";
 
-import Download from "../images/download.svg";
+import Download from "@images/download.svg";
 
 function Propose() {
   return (
     <section className="propose">
       <h2 className="propose__text">Wanna Propose Event?</h2>
 
-      <div className="self-information">
+      <div className="event-information">
         <input
           className="information__item"
           type="text"

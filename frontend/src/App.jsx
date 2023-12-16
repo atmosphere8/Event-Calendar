@@ -1,12 +1,14 @@
 import "./assets/styles/App.css";
 
-import Header from "./assets/components/Header.jsx";
-import Maintext from "./assets/components/Main-text.jsx";
-import Events from "./assets/components/Events.jsx";
-import Videos from "./assets/components/Videos.jsx";
-import Line from "./assets/components/Line.jsx";
-import Propose from "./assets/components/Propose.jsx";
-import Footer from "./assets/components/Footer.jsx";
+import Header from "@components/Header.jsx";
+import Maintext from "@components/Main-text.jsx";
+import Events from "@components/Events.jsx";
+import Videos from "@components/Videos.jsx";
+import Line from "@components/Line.jsx";
+import Propose from "@components/Propose.jsx";
+import About from "@components/About.jsx";
+import Subscribe from "@components/Subscribe.jsx";
+import Footer from "@components/Footer.jsx";
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
       <Line />
 
       <Propose />
+
+      <About />
+
+      <Subscribe />
 
       <Footer />
     </>

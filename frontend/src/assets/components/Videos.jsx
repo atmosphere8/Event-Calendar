@@ -1,5 +1,5 @@
 import "../styles/Videos.css";
-import Video from "../videos/video.mp4";
+import Video from "@videos/video.mp4";
 
 function Videos() {
   return (
