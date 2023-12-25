@@ -12,6 +12,8 @@ services:
     volumes:
       - ./frontend:/usr/src/app
       - /usr/src/app/node_modules
+    networks:
+      - my-network
   api:
     build:
       context: ./api
@@ -23,17 +25,27 @@ services:
     volumes:
       - ./api:/usr/src/app
       - /usr/src/app/node_modules
-    depends_on:
-      - mongodb
+    networks:
+      - my-network
   mongodb:
-    container_name: mongodb
+    container_name: mongo
     image: mongo
     ports:
       - 27017:27017
     env_file:
       - .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
     volumes:
       - ./db:/var/lib/mongodb
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=azurrodneyyy
-      - MONGO_INITDB_ROOT_PASSWORD=9k8cGYOdOu5G3W6M
+    networks:
+      - my-network
+
+volumes:
+  data:
+    driver: local
+networks:
+  my-network:
+    driver: bridge
