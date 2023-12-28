@@ -1,4 +1,4 @@
-import "@styles/Subscribe.css";
+import "@styles/pages/Main/Subscribe.css";
 
 function Subscribe() {
   return (

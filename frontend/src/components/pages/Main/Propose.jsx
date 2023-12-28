@@ -1,4 +1,4 @@
-import "@styles/Propose.css";
+import "@styles/pages/Main/Propose.css";
 
 import Download from "@images/download.svg";
 

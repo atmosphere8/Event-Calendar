@@ -1,5 +1,5 @@
 .line {
-  margin-top: 160px;
+  margin-top: 100px;
 }
 
 svg {
@@ -11,4 +11,5 @@ svg {
   stroke: #181818;
   stroke-dasharray: 40 30;
   stroke-width: 1.5px;
+  margin-top: 160px;
 }

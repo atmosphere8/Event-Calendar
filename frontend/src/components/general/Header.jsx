@@ -1,11 +1,11 @@
-import "@styles/Header.css";
+import "@styles/General/Header.css";
 import Arrow from "@images/Arrow.svg";
 
 function Header() {
   return (
     <header className="nav-header">
       <nav className="menu">
-        <a className="menu__link" href="">
+        <a className="menu__link" href="http://localhost/#/page">
           Logo
         </a>
         <a className="menu__link" href="">

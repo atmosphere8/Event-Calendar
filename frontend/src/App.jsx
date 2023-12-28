@@ -1,35 +1,18 @@
-import "./assets/styles/App.css";
+import "@styles/App/App.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "@components/Header.jsx";
-import Maintext from "@components/Main-text.jsx";
-import Events from "@components/Events.jsx";
-import Videos from "@components/Videos.jsx";
-import Line from "@components/Line.jsx";
-import Propose from "@components/Propose.jsx";
-import About from "@components/About.jsx";
-import Subscribe from "@components/Subscribe.jsx";
-import Footer from "@components/Footer.jsx";
+import Main from "./pages/Main";
+import AboutEvent from "./pages/AboutEvent";
 
 function App() {
   return (
     <>
-      <Header />
-
-      <Maintext />
-
-      <Events />
-
-      <Videos />
-
-      <Line />
-
-      <Propose />
-
-      <About />
-
-      <Subscribe />
-
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/page" element={<AboutEvent />} />
+        </Routes>
+      </Router>
     </>
   );
 }

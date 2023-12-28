@@ -1,4 +1,4 @@
-import "@styles/Videos.css";
+import "@styles/pages/Main/Videos.css";
 import Video from "@videos/video.mp4";
 
 function Videos() {

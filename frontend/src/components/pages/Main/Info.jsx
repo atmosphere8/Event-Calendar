@@ -1,11 +1,11 @@
-import "@styles/About.css";
+import "@styles/pages/Main/Info.css";
 import Concert from "@images/concert.png";
 
-function About() {
+function Info() {
   return (
     <>
-      <section className="about">
-        <div className="about__text">
+      <section className="info">
+        <div className="info__text">
           <p className="text__item">
             Lörem ipsum hupp hexar, i martad. Hjulboja dest röpeck är sagisk.
             Varor är i paran. Sode pretil, att solupp. Agt podda tere. Varor är
@@ -15,10 +15,10 @@ function About() {
             nygt stenost. Autona nilig.
           </p>
         </div>
-        <img className="about__image" src={Concert} alt="" />
+        <img className="info__image" src={Concert} alt="" />
       </section>
     </>
   );
 }
 
-export default About;
+export default Info;

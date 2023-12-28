@@ -1,4 +1,4 @@
-import "@styles/Line.css";
+import "@styles/General/Line.css";
 
 function Line() {
   return (

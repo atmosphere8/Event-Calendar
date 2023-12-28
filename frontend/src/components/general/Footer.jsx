@@ -1,4 +1,4 @@
-import "@styles/Footer.css";
+import "@styles/General/Footer.css";
 import Arrow from "@images/arrow.svg";
 
 function Footer() {

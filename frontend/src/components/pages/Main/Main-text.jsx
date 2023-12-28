@@ -1,4 +1,4 @@
-import "@styles/Main-text.css";
+import "@styles/pages/Main/Main-text.css";
 
 function Maintext() {
   return (

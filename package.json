@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "hash-router": "^0.4.0",
     "jsx": "^0.9.89"
   }
 }
