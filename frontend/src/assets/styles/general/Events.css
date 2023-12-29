@@ -1,39 +1,40 @@
 .events {
   height: 1092px;
-  width: 2000px;
 
-  margin-top: 166px;
+  margin-top: 50px;
   margin-left: 102px;
+  margin-bottom: 0px;
 }
 
-.events__header {
+.arrows {
   display: flex;
+  position: absolute;
+  margin-top: -185px;
+  margin-left: 1550px;
 }
 
-.header__text {
-  color: #181818;
-  font-family: GG Studio;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+.arrow-left,
+.arrow-right {
+  width: 56px;
+  height: 56px;
+  opacity: 0.8;
+  fill: #fff971;
+  transition: 0.3s all;
 }
 
-.header__arrow {
-  margin-top: 41.5px;
-  margin-left: 1090px;
+.arrow-right:hover,
+.arrow-left:hover {
+  fill: #353434;
+  opacity: 1;
 }
 
-.header__arrow-left {
+.arrow-left {
   transform: rotate(180deg);
   margin-right: 67px;
-  opacity: 0.4;
 }
 
 .events__list {
   display: flex;
-
   margin-top: 85px;
   margin-left: 168px;
 }

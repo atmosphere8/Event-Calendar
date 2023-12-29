@@ -1,36 +1,144 @@
-import "@styles/General/Events.css";
+import "@styles/general/Events.css";
+import Swiper from "swiper";
+import "@styles/swipers/events-swiper.css";
+import { Navigation } from "swiper/modules";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import Vector from "@images/vector.svg";
+import { ArrowRight } from "@images/ArrowRight.jsx";
+import { ArrowLeft } from "@images/ArrowLeft.jsx";
 import Point from "@images/point.svg";
 
 function Events() {
   const [response, setResponse] = useState([]);
+
   const fetchData = async () => {
-    await axios.get("http://localhost:3000/test").then((response) => {
+    try {
+      const response = await axios.get("http://localhost:3000/test");
       setResponse(response.data);
       console.log(response.data);
-    });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   useEffect(() => {
     fetchData();
+
+    const eventSwiper = new Swiper(".swiper", {
+      modules: [Navigation],
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    return () => {
+      eventSwiper.destroy();
+    };
   }, []);
 
   return (
     <section className="events">
-      <div className="events__header">
-        <h2 className="header__text">Top 5 Events</h2>
-        <div className="header__arrow">
-          <img className="header__arrow-left" src={Vector} alt="" />
-          <img className="header__arrow-right" src={Vector} alt="" />
+      <div className="swiper">
+        <div className="arrows">
+          <ArrowLeft />
+          <ArrowRight />
         </div>
-      </div>
+        <div className="swiper-wrapper events__list">
+          <div className="swiper-slide event">
+            <img className="event__image" src={Point} alt="" />
 
-      <div className="events__list">
+            <div className="event__text">
+              <div className="event__location">
+                <img className="location__point" src={Point} alt="" />
+                <p className="location__text"></p>
+              </div>
+              <h2 className="text__main"></h2>
+              <p className="text__description"></p>
+              <div className="event__button">
+                <a className="button__item" href="http://localhost/#/page">
+                  <p className="button__text">MORE ABOUT EVENT</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="swiper-slide event">
+            <img className="event__image" src={Point} alt="" />
+
+            <div className="event__text">
+              <div className="event__location">
+                <img className="location__point" src={Point} alt="" />
+                <p className="location__text"></p>
+              </div>
+              <h2 className="text__main"></h2>
+              <p className="text__description"></p>
+              <div className="event__button">
+                <a className="button__item" href="http://localhost/#/page">
+                  <p className="button__text">MORE ABOUT EVENT</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="swiper-slide event">
+            <img className="event__image" src={Point} alt="" />
+
+            <div className="event__text">
+              <div className="event__location">
+                <img className="location__point" src={Point} alt="" />
+                <p className="location__text"></p>
+              </div>
+              <h2 className="text__main"></h2>
+              <p className="text__description"></p>
+              <div className="event__button">
+                <a className="button__item" href="http://localhost/#/page">
+                  <p className="button__text">MORE ABOUT EVENT</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="swiper-slide event">
+            <img className="event__image" src={Point} alt="" />
+
+            <div className="event__text">
+              <div className="event__location">
+                <img className="location__point" src={Point} alt="" />
+                <p className="location__text"></p>
+              </div>
+              <h2 className="text__main"></h2>
+              <p className="text__description"></p>
+              <div className="event__button">
+                <a className="button__item" href="http://localhost/#/page">
+                  <p className="button__text">MORE ABOUT EVENT</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="swiper-slide event">
+            <img className="event__image" src={Point} alt="" />
+
+            <div className="event__text">
+              <div className="event__location">
+                <img className="location__point" src={Point} alt="" />
+                <p className="location__text"></p>
+              </div>
+              <h2 className="text__main"></h2>
+              <p className="text__description"></p>
+              <div className="event__button">
+                <a className="button__item" href="http://localhost/#/page">
+                  <p className="button__text">MORE ABOUT EVENT</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         {response.map((event) => (
-          <div className="event" key={event.id}>
+          <div className="swiper-slide event" key={event.id}>
             <img className="event__image" src={event.imagePath} alt="" />
 
             <div className="event__text">
@@ -41,7 +149,7 @@ function Events() {
               <h2 className="text__main">{event.title}</h2>
               <p className="text__description">{event.description}</p>
               <div className="event__button">
-                <a className="button__item" href="">
+                <a className="button__item" href="http://localhost/#/page">
                   <p className="button__text">MORE ABOUT EVENT</p>
                 </a>
               </div>

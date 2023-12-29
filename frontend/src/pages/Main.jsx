@@ -1,5 +1,6 @@
 import Header from "@components/general/Header.jsx";
 import Maintext from "@components/pages/Main/Main-text.jsx";
+import Eventstext from "@components/pages/Main/Events-text.jsx";
 import Events from "@components/general/Events.jsx";
 import Videos from "@components/pages/Main/Videos.jsx";
 import Line from "@components/general/Line.jsx";
@@ -14,6 +15,8 @@ function Main() {
       <Header />
 
       <Maintext />
+
+      <Eventstext />
 
       <Events />
 

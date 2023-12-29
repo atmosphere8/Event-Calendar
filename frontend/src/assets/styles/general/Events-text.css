@@ -1,0 +1,15 @@
+.events-text {
+  display: flex;
+  margin-left: 102px;
+  margin-top: 150px;
+}
+
+.events-text .text__item {
+  color: #181818;
+  font-family: GG Studio;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
